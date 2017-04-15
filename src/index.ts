@@ -11,4 +11,4 @@ readFile('./package.json', (err, packageStr) => {
 
     console.log(`Running typescript-node-starter version ${json.version}`);
     console.info(`Running on ${os.hostname()} with ${os.cpus().length} CPU's and ${os.totalmem()} mem`);
-})
+});

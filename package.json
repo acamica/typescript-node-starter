@@ -7,6 +7,8 @@
   "license": "MIT",
   "scripts": {
     "commitmsg": "validate-commit-msg",
+    "precommit": "tslint --project tsconfig.json",
+    "fixlint": "tslint --project tsconfig.json --fix",
     "start": "node dist/index.js",
     "build": "tsc"
   },
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@types/node": "^7.0.12",
     "husky": "^0.13.3",
+    "tslint": "^5.1.0",
     "validate-commit-msg": "^2.12.1"
   }
 }
