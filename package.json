@@ -6,6 +6,7 @@
   "author": "Hernan Rajchert <hrajchert@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "commitmsg": "validate-commit-msg",
     "start": "node dist/index.js",
     "build": "tsc"
   },
@@ -13,6 +14,8 @@
     "typescript": "^2.2.2"
   },
   "devDependencies": {
-    "@types/node": "^7.0.12"
+    "@types/node": "^7.0.12",
+    "husky": "^0.13.3",
+    "validate-commit-msg": "^2.12.1"
   }
 }
