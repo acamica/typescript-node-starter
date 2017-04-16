@@ -14,6 +14,7 @@ Features
 * GIT messages validator using format like `feat(general): Some description`
 * Reliable package management using [yarn](https://yarnpkg.com/en/)
 * Homogeneous service enviroment using [Docker](https://www.docker.com/)
+* [Editor config](http://editorconfig.org/) for editors that supports it like Visual Code
 
 ### Docker
 
@@ -48,7 +49,6 @@ TODO:
 * Add CI
 * Add doc generation
 * Add testing coverage
-* Add EditorConfig
 * Add `npm install` script or similar to enable simpler "forks"
 * Add readme badges
 * Maybe: Create branch with FRP using rx and ramda
