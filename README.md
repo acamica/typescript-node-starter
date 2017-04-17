@@ -13,25 +13,25 @@ Features
 * TSlint before commit
 * GIT messages validator using format like `feat(general): Some description`
 * Reliable package management using [yarn](https://yarnpkg.com/en/)
-* Homogeneous service enviroment using [Docker](https://www.docker.com/)
+* Homogeneous service environment using [Docker](https://www.docker.com/)
 * [Editor config](http://editorconfig.org/) for editors that supports it like Visual Code
 
 ### Docker
 
-If the node app you are trying to build is intended to be a service of some sort (micro or monolithic) you may want to guarantee that it runs in reliable enviroment. Using Docker we can specify the version of `os`, `node` and others to reduce the difference between dev, prod and ci enviroments.
+If the node app you are trying to build is intended to be a service of some sort (micro or monolithic) you may want to guarantee that it runs in reliable environment. Using Docker we can specify the version of `os`, `node` and others to reduce the difference between dev, prod and CI environment.
 
 If you want to learn more about Docker you can try [this course (in spanish)](https://www.acamica.com/cursos/128/introduccion-a-docker). To remove docker from the project just delete the `Dockerfile`.
 
 To use docker with this starter project, first create your images with the following command
 
 ```console
-docker build -t myapp:0.0.1 .
+docker build -t tyno:0.0.1 .
 ```
 
-where `-t myapp:0.0.1` tags the image as `myapp` in the specific version. Then run an instance of your image like this
+where `-t tyno:0.0.1` tags the image as `tyno` in the specific version. Then run an instance of your image like this
 
 ```console
-docker run myapp
+docker run --name myapp tyno
 ```
 
 Notice that the `Dockerfile` is built in order to take advantage of the `Docker layers`, if you modify the code in the src folder it won't run `yarn install`, but if you change the `package.json` or `yarn.lock` it will.
