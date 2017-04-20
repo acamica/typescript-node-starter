@@ -18,20 +18,20 @@ Features
 
 ### Docker
 
-If the node app you are trying to build is intended to be a service of some sort (micro or monolithic) you may want to guarantee that it runs in reliable environment. Using Docker we can specify the version of `os`, `node` and others to reduce the difference between dev, prod and CI environment.
+If the node app you are trying to build is intended to be a service of some sort (micro or monolithic) you may want to guarantee that it runs in reliable environment. Using Docker we can specify the version of `os`, `node` and others to reduce the difference between dev, prod and ci environments.
 
 If you want to learn more about Docker you can try [this course (in spanish)](https://www.acamica.com/cursos/128/introduccion-a-docker). To remove docker from the project just delete the `Dockerfile`.
 
 To use docker with this starter project, first create your images with the following command
 
 ```console
-docker build -t tyno:0.0.1 .
+docker build -t myapp:0.0.1 .
 ```
 
-where `-t tyno:0.0.1` tags the image as `tyno` in the specific version. Then run an instance of your image like this
+where `-t myapp:0.0.1` tags the image as `myapp` in the specific version. Then run an instance of your image like this
 
 ```console
-docker run --name myapp tyno
+docker run myapp
 ```
 
 Notice that the `Dockerfile` is built in order to take advantage of the `Docker layers`, if you modify the code in the src folder it won't run `yarn install`, but if you change the `package.json` or `yarn.lock` it will.
