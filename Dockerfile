@@ -1,8 +1,7 @@
-FROM node:6.10.2
+FROM node:6.10.2-alpine
 
-# Install yarn
-
-# RUN npm install -g yarn
+# File Author / Maintainer
+MAINTAINER Hernan Rajchert
 
 # First copy the yarn.lock to install stuff and benefit from the layer cache
 COPY ["package.json", "yarn.lock", "/usr/src/"]
@@ -20,4 +19,4 @@ COPY [".", "/usr/src/"]
 RUN npm run build
 
 # Tell docker what to run as default
-CMD npm start
+ENTRYPOINT ["npm", "start"]
