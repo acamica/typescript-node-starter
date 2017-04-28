@@ -24,7 +24,7 @@ Unit testing is your first line of defense against bugs when you are developing 
 Your code is in TypeScript and so should your test files. That way if a test fails it's easier to see if its due to a change in the contract or an actual bug.
 
 #### Why mocha + chai + sinon:
-* ✅ It's been proven over and over. Well known in the community.
+* ✅ It's been proven over and over / Well known in the community.
 * ✅ Decoupled test runner from the assertion and or mock library.
 * 🚫 By default it runs all the test sequentially (so it may be slower than others)
 

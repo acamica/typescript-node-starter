@@ -10,17 +10,13 @@
     "precommit": "run-s lint:*",
     "prepush": "run-s build-and:test",
     "lint:ts": "tslint --project tsconfig.json",
-    "fixlint": "tslint --project tsconfig.json --fix",
-
+    "lint-and-fix:-ts": "tslint --project tsconfig.json --fix",
     "start": "node dist/index.js",
     "build": "rm -Rf dist;tsc",
-
     "test": "mocha dist/**/*.test.js",
     "tdd": "run-p watch:*",
-
-    "build-and:test" : "run-s build test",
-    "build-and:start" : "run-s build start",
-
+    "build-and:test": "run-s build test",
+    "build-and:start": "run-s build start",
     "watch:ts": "tsc -w",
     "watch:test": "mocha dist/**/*.test.js -w --growl"
   },
@@ -37,6 +33,7 @@
     "npm-run-all": "^4.0.2",
     "sinon": "^2.1.0",
     "tslint": "^5.1.0",
+    "tslint-config-acamica": "^1.0.1",
     "validate-commit-msg": "^2.12.1"
   }
 }
