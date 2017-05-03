@@ -21,7 +21,7 @@
     "watch:test": "mocha dist/**/*.test.js -w --growl"
   },
   "dependencies": {
-    "typescript": "^2.2.2"
+    "typescript": "^2.3.2"
   },
   "devDependencies": {
     "@types/chai": "^3.5.1",

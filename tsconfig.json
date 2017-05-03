@@ -4,6 +4,11 @@
         "target": "es5",
         "outDir": "dist",
         "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictNullChecks": true,
         "sourceMap": true
     }
 }

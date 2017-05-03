@@ -10,12 +10,27 @@ TODO: Add some doc on how to create an instance from this repo.
 
 Features
 --------
+* TypeScript Workflow
 * Unit testing and tdd/bdd workflow
 * TSlint before commit
 * GIT messages validator using format like `feat(general): Some description`
 * Reliable package management using [yarn](https://yarnpkg.com/en/)
 * Homogeneous service environment using [Docker](https://www.docker.com/)
 * [Editor config](http://editorconfig.org/) for editors that supports it like Visual Code
+
+### TypeScript Workflow
+TypeScript v2.3
+
+TODO: explain `npm start` and `npm run build-and:start`
+
+TODO: explain strict rules
+
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictNullChecks": true,
 
 ### Unit testing & TDD
 
