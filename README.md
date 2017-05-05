@@ -125,9 +125,7 @@ TODO:
 * Add CI
 * Add doc generation
 * Add testing coverage
-* Add `npm install` script or similar to enable simpler "forks"
 * Add readme badges
 * Maybe: Create branch with FRP using rx and ramda
 * Maybe: Create branch with express and knex
 * Maybe: Create branch with CLI using commander or similar
-* Improve docs

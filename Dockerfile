@@ -1,8 +1,5 @@
 FROM node:6.10.2-alpine
 
-# File Author / Maintainer
-MAINTAINER Hernan Rajchert
-
 # First copy the yarn.lock to install stuff and benefit from the layer cache
 COPY ["package.json", "yarn.lock", "/usr/src/"]
 
