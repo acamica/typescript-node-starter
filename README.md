@@ -5,7 +5,16 @@ TODO: add basic explanation of the project
 
 Usage:
 ------
-TODO: Add some doc on how to create an instance from this repo.
+
+To start using the `typescript node starter` you just need to follow this steps
+
+```bash
+# clone this repo (change myapp for your application name)
+$ git clone git@github.com:acamica/typescript-node-starter.git myapp
+$ cd myapp
+# Install your deps using yarn or npm and follow the questions.
+$ npm install
+```
 
 
 Features
