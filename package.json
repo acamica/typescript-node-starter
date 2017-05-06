@@ -13,12 +13,14 @@
     "lint-and-fix:-ts": "tslint --project tsconfig.json --fix",
     "start": "node dist/src/index.js",
     "build": "rm -Rf dist && tsc",
-    "test": "mocha dist/**/*.test.js",
+    "test": "mocha dist/**/*.test.js --debug --colors",
     "tdd": "run-p watch:*",
+    "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
+    "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version} .",
     "build-and:test": "run-s build test",
     "build-and:start": "run-s build start",
     "watch:ts": "tsc -w",
-    "watch:test": "mocha dist/**/*.test.js -w --growl",
+    "watch:test": "mocha dist/**/*.test.js -w --colors --debug --growl",
     "postinstall": "npm run -s build && node dist/scripts/init/init"
   },
   "dependencies": {

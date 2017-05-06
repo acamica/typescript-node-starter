@@ -1,7 +1,7 @@
 TypeScript node app starter
 ===========================
 
-TODO: add basic explanation of the project
+This is a starter project that will let you write node apps written in TypeScript in no time.
 
 Usage:
 ------
@@ -25,6 +25,7 @@ Features
 * GIT messages validator using format like `feat(general): Some description`
 * Reliable package management using [yarn](https://yarnpkg.com/en/)
 * Homogeneous service environment using [Docker](https://www.docker.com/)
+* Visual Studio Code configuration
 * [Editor config](http://editorconfig.org/) for editors that supports it like Visual Code
 
 ### TypeScript Workflow
@@ -125,6 +126,17 @@ Notice that the `Dockerfile` is built in order to take advantage of the `Docker 
 
 TODO: add reference for english course on docker
 
+### Visual Studio Code configuration
+
+If you are using [Visual Studio Code](https://code.visualstudio.com/) you have some things preconfigured under the `.vscode`:
+
+* You can [run or debug your *tests*](https://code.visualstudio.com/docs/editor/debugging) by selecting the `Run tests` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
+* You can [run or debug your *program*](https://code.visualstudio.com/docs/editor/debugging) by selecting the `Launch Program` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
+* You can replay the run by pressing F5.
+* When editing typescript files you get `fix lint on save`.
+* You can build the project by doing `⌘⇧B`.
+* Build and tag a docker image using the `docker-build` [task](https://code.visualstudio.com/docs/editor/tasks).
+* Build, tag and run a docker image using the `Buid and Launch Docker` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
 
 TODO:
 -----
