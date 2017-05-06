@@ -13,7 +13,7 @@ RUN yarn install
 COPY [".", "/usr/src/"]
 
 # Build the project
-RUN npm run build
+RUN npm run -q build
 
 # Tell docker what to run as default
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "start", "-s"]
