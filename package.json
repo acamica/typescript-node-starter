@@ -16,7 +16,7 @@
     "test": "mocha dist/**/*.test.js --debug --colors",
     "tdd": "run-p watch:*",
     "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
-    "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version} .",
+    "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version}",
     "build-and:test": "run-s build test",
     "build-and:start": "run-s build start",
     "watch:ts": "tsc -w",

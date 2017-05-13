@@ -16,4 +16,4 @@ COPY [".", "/usr/src/"]
 RUN npm run -q build
 
 # Tell docker what to run as default
-ENTRYPOINT ["npm", "start", "-s"]
+CMD ["npm", "start", "-s"]
