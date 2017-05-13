@@ -6,7 +6,7 @@ This is a starter project that will let you write node apps written in TypeScrip
 Usage:
 ------
 
-To start using the `typescript node starter` you just need to follow this steps
+To start using the `typescript node starter` you just need to follow these steps
 
 ```bash
 # clone this repo (change myapp for your application name)
@@ -57,22 +57,19 @@ Your code is in TypeScript and so should your test files. That way if a test fai
 
 Create a test file next to the file you want to test, using the nomenclature `<file-name>.test.ts`.
 
-If you are running a single pass you have to build the source and test and then run them.
+You can run your test in a single run by doing:
 
 ```bash
-$ npm run build
-$ npm t
-# or
 $ npm run build-and:test
 ```
 
-While you are developing you can run in `tdd` mode, so whenever you change a file it gets compiled and the test runned.
+Or you can enter in a `Test Driven Development` mode, so whenever you change a file it gets compiled and the test are executed.
 
 ```bash
 $ npm run tdd
 ```
 
-🌟 If you install a terminal notifier you can receive growl messages with the test execution results. 🌟
+🌟 You can install a terminal notifier to receive growl messages with the test execution results.
 
 ```bash
 # How to install growl messages on your platform
@@ -87,9 +84,9 @@ TODO: add ci
 
 TODO: Add a gif of growl messages
 
-TODO: Investigate how to run from visual code
-
 TODO: See if we can add a way to create test in a `test` directory as well.
+
+TODO: Video of tdd with zen mode
 
 #### How to remove:
 
@@ -102,7 +99,7 @@ In the `package.json` remove the scripts "test", "watch:test" and "tdd" and if n
 
 
 #### More info
-TODO: Add link to sinon, chai and
+TODO: Add link to sinon, chai and mocha
 
 ### Docker
 
@@ -110,25 +107,31 @@ If the node app you are trying to build is intended to be a service of some sort
 
 If you want to learn more about Docker you can try [this course (in spanish)](https://www.acamica.com/cursos/128/introduccion-a-docker). To remove docker from the project just delete the `Dockerfile`.
 
-To use docker with this starter project, first create your images with the following command
+TODO: add reference for an english course on docker
+
+You can build your docker images using the command
 
 ```bash
-$ docker build -t myapp:0.0.1 .
+$ npm run docker:build
 ```
 
-where `-t myapp:0.0.1` tags the image as `myapp` in the specific version. Then run an instance of your image like this
+The images created by the build will be tagged with the name and version of your project as specified in the package.json. You can run the image using docker directly or you can run it as an `npm script`.
 
 ```bash
-$ docker run myapp
+$ npm run docker:run
 ```
 
-Notice that the `Dockerfile` is built in order to take advantage of the `Docker layers`, if you modify the code in the src folder it won't run `yarn install`, but if you change the `package.json` or `yarn.lock` it will.
+TODO: Implement docker:push
 
-TODO: add reference for english course on docker
+If you need to modify the way your image is built, runned or published, you can edit the `docker:*` scripts
+located in the package.json.
+
+Notice that the `Dockerfile` takes advantage of the `layers cache`, if you modify the code in the `src` folder it won't run `yarn install`, it will only build the typescript code. If you change the `package.json` or `yarn.lock` it will install deps and then build.
+
 
 ### Visual Studio Code configuration
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you have some things preconfigured under the `.vscode`:
+If you are using [Visual Studio Code](https://code.visualstudio.com/) you have some things pre-configured under the `.vscode` folder:
 
 * You can [run or debug your *tests*](https://code.visualstudio.com/docs/editor/debugging) by selecting the `Run tests` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
 * You can [run or debug your *program*](https://code.visualstudio.com/docs/editor/debugging) by selecting the `Launch Program` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
@@ -136,17 +139,19 @@ If you are using [Visual Studio Code](https://code.visualstudio.com/) you have s
 * When editing typescript files you get `fix lint on save`.
 * You can build the project by doing `⌘⇧B`.
 * Build and tag a docker image using the `docker-build` [task](https://code.visualstudio.com/docs/editor/tasks).
-* Build, tag and run a docker image using the `Buid and Launch Docker` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
+* Build, tag and run a docker image using the `Build and Launch Docker` [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations).
 
 TODO:
 -----
 * Add package deps upgrade tool
-* Add automatic changelog
+* Add automatic Changelog
 * Add automatic semver
 * Add CI
 * Add doc generation
 * Add testing coverage
 * Add readme badges
+* Improve docker integration to build faster
+* Improve tdd watch mode
 * Maybe: Create branch with FRP using rx and ramda
 * Maybe: Create branch with express and knex
 * Maybe: Create branch with CLI using commander or similar

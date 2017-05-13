@@ -35,7 +35,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Buid and Launch Docker",
+            "name": "Build and Launch Docker",
             "preLaunchTask": "docker-build",
             "runtimeExecutable": "npm",
             "windows": {
