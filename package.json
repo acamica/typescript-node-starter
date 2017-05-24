@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Empty project with all that you need to start a generic node app",
   "main": "dist/src/index.js",
+  "typings": "dist/src/types.d.ts",
   "author": "Hernan Rajchert <hrajchert@gmail.com>",
   "license": "MIT",
   "scripts": {
