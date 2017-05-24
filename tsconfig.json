@@ -3,6 +3,7 @@
         "module": "commonjs",
         "target": "es2015",
         "outDir": "dist",
+        "declaration": true,
         "noImplicitAny": true,
         "noImplicitThis": true,
         "noUnusedLocals": true,
