@@ -31,16 +31,10 @@ Features
 ### TypeScript Workflow
 TypeScript v2.3
 
+
 TODO: explain `npm start` and `npm run build-and:start`
 
-TODO: explain strict rules
-
-        "noImplicitAny": true,
-        "noImplicitThis": true,
-        "noUnusedLocals": true,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-        "strictNullChecks": true,
+The project uses the [strict master option](https://github.com/Microsoft/TypeScript/pull/14486) by default and `noUnusedLocals`. If you are new to typescript you may want to lay back on the strictness by disabling it (configuring tsconfig.json), and as you get more accustomed you can enable it again.
 
 ### Unit testing & TDD
 
