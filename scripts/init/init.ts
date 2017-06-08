@@ -28,7 +28,7 @@ async function main () {
     delete newPackage.scripts['postinstall'];
 
     // Write the new package json back
-    writeFile(join(root, 'package.json'), JSON.stringify(newPackage, null, 2));
+    await writeFile(join(root, 'package.json'), JSON.stringify(newPackage, null, 2));
 
     // Reset git and make first commit
     resetGit(projectInfo.name, packageJSON.version);
