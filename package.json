@@ -11,7 +11,7 @@
     "prepush": "run-s build-and:test",
     "lint:ts": "tslint --project tsconfig.json",
     "lint-and-fix:-ts": "tslint --project tsconfig.json --fix",
-    "start": "node dist/src/index.js",
+    "start": "tsns run",
     "build": "rm -Rf dist && tsc",
     "test": "mocha dist/**/*.test.js --debug --colors",
     "tdd": "run-p watch:*",
@@ -24,6 +24,7 @@
     "postinstall": "npm run -s build && node dist/scripts/init/init"
   },
   "dependencies": {
+    "tsns": "~0.0.2",
     "typescript": "^2.3.2"
   },
   "devDependencies": {
