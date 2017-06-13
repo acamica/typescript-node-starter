@@ -9,7 +9,7 @@ Quick Start:
 ### Clone, cd and Install
 
 ```bash
-$ git clone git@github.com:acamica/typescript-node-starter.git myapp
+$ git clone https://github.com/acamica/typescript-node-starter.git myapp
 $ cd myapp
 # Install and follow the questions.
 $ npm install
