@@ -6,10 +6,9 @@ Create unopinionated node apps using TypeScript 🎉
 Quick Start:
 ------------
 
-### Clone and Install
+### Clone, cd and Install
 
 ```bash
-# clone and enter
 $ git clone git@github.com:acamica/typescript-node-starter.git myapp
 $ cd myapp
 # Install and follow the questions.
@@ -23,7 +22,7 @@ $ npm install
 Write your program using `src/index.ts` as the entry point, and run it.
 
 ```bash
-$ npm run build-and:start
+$ npm run start
 ```
 
 
