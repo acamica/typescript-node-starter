@@ -69,7 +69,9 @@ Create a test file next to the file you want to test, using the nomenclature `<f
 You can run your test in a single run by doing:
 
 ```bash
-$ npm run build-and:test
+$ npm t
+# or
+# npm run test
 ```
 
 Or you can enter in a `Test Driven Development` mode, so whenever you change a file it gets compiled and the test are executed.

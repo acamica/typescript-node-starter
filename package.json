@@ -6,22 +6,24 @@
   "author": "Hernan Rajchert <hrajchert@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "commitmsg": "validate-commit-msg",
-    "precommit": "run-s lint:*",
-    "prepush": "run-s build-and:test",
-    "lint:ts": "tslint --project tsconfig.json",
-    "lint-and-fix:-ts": "tslint --project tsconfig.json --fix",
     "start": "tsns run",
-    "build": "rm -Rf dist && tsc",
-    "test": "mocha dist/**/*.test.js --debug --colors",
+    "test": "run-s test-once",
     "tdd": "run-p watch:*",
+    "build": "rm -Rf dist && tsc",
     "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
     "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version}",
-    "build-and:test": "run-s build test",
+    
+    "commitmsg": "validate-commit-msg",    
+    "precommit": "run-s lint:*",
+    "prepush": "run-s build-and:test",
+    "postinstall": "npm run -s build && node dist/scripts/init/init",
+    "lint:ts": "tslint --project tsconfig.json",
+    "lint-and-fix:-ts": "tslint --project tsconfig.json --fix",
+    "build-and:test": "run-s build test-once",
     "build-and:start": "run-s build start",
     "watch:ts": "tsc -w",
     "watch:test": "mocha dist/**/*.test.js -w --colors --debug --growl",
-    "postinstall": "npm run -s build && node dist/scripts/init/init"
+    "test-once": "mocha dist/**/*.test.js --debug --colors"
   },
   "dependencies": {
     "tsns": "~0.0.3",
