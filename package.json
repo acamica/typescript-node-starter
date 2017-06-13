@@ -24,7 +24,7 @@
     "postinstall": "npm run -s build && node dist/scripts/init/init"
   },
   "dependencies": {
-    "tsns": "~0.0.2",
+    "tsns": "~0.0.3",
     "typescript": "^2.3.2"
   },
   "devDependencies": {

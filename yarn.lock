@@ -764,9 +764,9 @@ tslint@^5.1.0:
     semver "^5.3.0"
     tsutils "^1.4.0"
 
-tsns@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/tsns/-/tsns-0.0.1.tgz#0fe52a568baa3b94c8f218993094617795b23f9b"
+tsns@~0.0.2:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tsns/-/tsns-0.0.3.tgz#0311f71a569922d4574afac890534f68349406d3"
   dependencies:
     "@types/commander" "^2.9.1"
     commander "^2.9.0"
