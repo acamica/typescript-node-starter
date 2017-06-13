@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "tsns run",
-    "test": "run-s test-once",
+    "test": "run-s build-and:test",
     "tdd": "run-p watch:*",
     "build": "rm -Rf dist && tsc",
     "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
