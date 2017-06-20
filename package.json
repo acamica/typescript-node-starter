@@ -9,11 +9,11 @@
     "start": "tsns run",
     "test": "run-s build-and:test",
     "tdd": "run-p watch:*",
-    "build": "rm -Rf dist && tsc",
+    "build": "tsns build",
     "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
     "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version}",
-    
-    "commitmsg": "validate-commit-msg",    
+
+    "commitmsg": "validate-commit-msg",
     "precommit": "run-s lint:*",
     "prepush": "run-s build-and:test",
     "postinstall": "npm run -s build && node dist/scripts/init/init",
@@ -26,7 +26,7 @@
     "test-once": "mocha dist/**/*.test.js --debug --colors"
   },
   "dependencies": {
-    "tsns": "~0.0.3",
+    "tsns": "~0.0.6",
     "typescript": "^2.3.2"
   },
   "devDependencies": {
