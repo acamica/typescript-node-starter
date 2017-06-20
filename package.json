@@ -14,7 +14,7 @@
     "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version}",
 
     "commitmsg": "validate-commit-msg",
-    "precommit": "run-s lint:*",
+    "precommit": "run-s lint:* \"build -- --no-unused-locals\"",
     "prepush": "run-s build-and:test",
     "postinstall": "npm run -s build && node dist/scripts/init/init",
     "lint:ts": "tslint --project tsconfig.json",
