@@ -1,7 +1,7 @@
 TypeScript Node App Starter
 ===========================
 
-Create unopinionated node apps using TypeScript 🎉
+Create a bare bones node apps using TypeScript 🎉
 
 Quick Start:
 ------------
