@@ -1,7 +1,8 @@
 TypeScript Node App Starter
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 ===========================
 
-Create a bare bones node apps using TypeScript 🎉
+Create bare bones NodeJS apps using TypeScript 🎉
 
 Quick Start:
 ------------
@@ -24,8 +25,6 @@ Write your program using `src/index.ts` as the entry point, and run it.
 ```bash
 $ npm run start
 ```
-
-
 
 Features
 --------
@@ -93,14 +92,11 @@ $ sudo apt-get install libnotify-bin
 
 #### How to Remove:
 
-
 ```bash
 $ yarn remove -D mocha @types/mocha chai @types/chai sinon
 ```
 
 In the `package.json` remove the scripts "test", "watch:test" and "tdd" and if no other script uses it, remove `npm-run-all` as a dependency.
-
-
 
 ### 🐳 Docker
 
@@ -124,7 +120,6 @@ If you need to modify the way your image is built, runned or published, you can 
 located in the package.json.
 
 Notice that the `Dockerfile` takes advantage of the `layers cache`, if you modify the code in the `src` folder it won't run `yarn install`, it will only build the typescript code. If you change the `package.json` or `yarn.lock` it will install deps and then build.
-
 
 ### 🎉 Visual Studio Code Goodies
 
@@ -157,3 +152,18 @@ TODO:
 * Video of tdd with zen mode
 * add reference for an english course on docker
 * Implement docker:push
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars0.githubusercontent.com/u/2634059?v=4" width="100px;"/><br /><sub>Hernan Rajchert</sub>](https://github.com/hrajchert)<br />[💻](https://github.com/acamica/typescript-node-starter/commits?author=hrajchert "Code") [📖](https://github.com/acamica/typescript-node-starter/commits?author=hrajchert "Documentation") [🐛](https://github.com/acamica/typescript-node-starter/issues?q=author%3Ahrajchert "Bug reports") | [<img src="https://avatars2.githubusercontent.com/u/824445?v=4" width="100px;"/><br /><sub>facu</sub>](https://github.com/facurubin)<br />[💻](https://github.com/acamica/typescript-node-starter/commits?author=facurubin "Code") [📖](https://github.com/acamica/typescript-node-starter/commits?author=facurubin "Documentation") [🐛](https://github.com/acamica/typescript-node-starter/issues?q=author%3Afacurubin "Bug reports") | [<img src="https://avatars0.githubusercontent.com/u/4248944?v=4" width="100px;"/><br /><sub>Cristhian Duran</sub>](https://durancristhian.github.io/)<br />[🐛](https://github.com/acamica/typescript-node-starter/issues?q=author%3Adurancristhian "Bug reports") | [<img src="https://avatars0.githubusercontent.com/u/948922?v=4" width="100px;"/><br /><sub>Nicolás Quiroz</sub>](https://nicolasquiroz.com)<br />[💻](https://github.com/acamica/typescript-node-starter/commits?author=nhsz "Code") [📖](https://github.com/acamica/typescript-node-starter/commits?author=nhsz "Documentation") |
+| :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+MIT
