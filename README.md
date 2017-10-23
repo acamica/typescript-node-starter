@@ -1,7 +1,7 @@
 TypeScript Node App Starter
 ===========================
 
-Create a bare bones node apps using TypeScript 🎉
+Create a bare bones NodeJS App using TypeScript 🎉
 
 Quick Start:
 ------------
@@ -157,3 +157,18 @@ TODO:
 * Video of tdd with zen mode
 * add reference for an english course on docker
 * Implement docker:push
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars1.githubusercontent.com/u/2634059?s=400&v=4" width="100px;"/><br /><sub>Hernán Rajchert</sub>](https://github.com/hrajchert)<br />[💻](https://github.com/acamica/typescript-node-starter/commits?author=hrajchert)[📖](https://github.com/acamica/typescript-node-starter/commits?author=hrajchert)[🐛](https://github.com/acamica/typescript-node-starter/issues?q=author%3Ahrajchert) | [<img src="https://avatars2.githubusercontent.com/u/824445?s=400&v=4" width="100px;"/><br /><sub>Facundo Rubin</sub>](https://github.com/facurubin)<br />[💻](https://github.com/acamica/typescript-node-starter/commits?author=facurubin)[📖](https://github.com/acamica/typescript-node-starter/commits?author=facurubin)[🐛](https://github.com/acamica/typescript-node-starter/issues?q=author%3Afacurubin) | [<img src="https://avatars1.githubusercontent.com/u/4248944?s=400&v=4" width="100px;"/><br /><sub>Cristhian Duran</sub>](https://github.com/durancristhian)<br />[🐛](https://github.com/acamica/typescript-node-starter/issues?q=author%3Adurancristhian) | [<img src="https://avatars0.githubusercontent.com/u/948922?s=460&v=4" width="100px;"/><br /><sub>Nicolás Quiroz</sub>](https://github.com/nhsz)<br />[📖](https://github.com/acamica/typescript-node-starter/commits?author=nhsz) |
+| :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+## LICENSE
+
+MIT
