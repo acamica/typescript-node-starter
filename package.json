@@ -12,7 +12,6 @@
     "build": "tsns build",
     "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
     "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version}",
-
     "commitmsg": "validate-commit-msg",
     "precommit": "run-s lint:* \"build -- --no-unused-locals\"",
     "prepush": "run-s build-and:test",
@@ -23,7 +22,9 @@
     "build-and:start": "run-s build start",
     "watch:ts": "tsc -w",
     "watch:test": "mocha dist/**/*.test.js -w --colors --debug --growl",
-    "test-once": "mocha dist/**/*.test.js --debug --colors"
+    "test-once": "mocha dist/**/*.test.js --debug --colors",
+    "contributors-add": "all-contributors add",
+    "contributors-generate": "all-contributors generate"
   },
   "dependencies": {
     "tsns": "~0.0.6",
@@ -34,6 +35,7 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^7.0.12",
     "@types/shelljs": "^0.7.1",
+    "all-contributors-cli": "^4.5.1",
     "chai": "^3.5.0",
     "husky": "^0.13.3",
     "mocha": "^3.2.0",
