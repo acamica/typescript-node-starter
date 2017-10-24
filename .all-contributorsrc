@@ -1,0 +1,52 @@
+{
+  "projectName": "typescript-node-starter",
+  "projectOwner": "acamica",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "hrajchert",
+      "name": "Hernan Rajchert",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2634059?v=4",
+      "profile": "https://github.com/hrajchert",
+      "contributions": [
+        "code",
+        "doc",
+        "bug"
+      ]
+    },
+    {
+      "login": "facurubin",
+      "name": "Facundo Rubin",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/824445?v=4",
+      "profile": "https://github.com/facurubin",
+      "contributions": [
+        "code",
+        "doc",
+        "bug"
+      ]
+    },
+    {
+      "login": "durancristhian",
+      "name": "Cristhian Duran",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4248944?v=4",
+      "profile": "https://durancristhian.github.io/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "nhsz",
+      "name": "Nicolás Quiroz",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/948922?v=4",
+      "profile": "https://nicolasquiroz.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ]
+}
