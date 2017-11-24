@@ -29,7 +29,7 @@
             "preLaunchTask": "build",
             "name": "Launch Program",
             "outFiles": ["${workspaceRoot}/dist/**/*.js"],
-            "program": "${workspaceRoot}/dist/src/index.js",
+            "program": "${workspaceRoot}/dist/index.js",
             "sourceMaps": true
         },
         {
