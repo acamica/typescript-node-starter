@@ -21,8 +21,8 @@
     "build-and:test": "run-s build test-once",
     "build-and:start": "run-s build start",
     "watch:ts": "tsc -w",
-    "watch:test": "mocha dist/**/*.test.js -w --colors --debug --growl",
-    "test-once": "mocha dist/**/*.test.js --debug --colors",
+    "watch:test": "mocha dist/**/*.test.js -w --colors --inspect --growl",
+    "test-once": "mocha dist/**/*.test.js --inspect --colors",
     "contributors-add": "all-contributors add",
     "contributors-generate": "all-contributors generate"
   },
