@@ -1,7 +1,7 @@
 {
   "name": "typescript-node-starter",
-  "version": "0.0.3",
-  "description": "Empty project with all that you need to start a generic node app",
+  "version": "0.0.4",
+  "description": "Bare bones project with all that you need to start a node app",
   "main": "dist/index.js",
   "author": "Hernan Rajchert <hrajchert@gmail.com>",
   "license": "MIT",
@@ -27,20 +27,18 @@
     "contributors-generate": "all-contributors generate"
   },
   "dependencies": {
-    "tsns": "~0.0.6",
+    "tsns": "0.0.15",
     "typescript": "^2.3.2"
   },
   "devDependencies": {
     "@types/chai": "^3.5.1",
     "@types/mocha": "^2.2.41",
     "@types/node": "^7.0.12",
-    "@types/shelljs": "^0.7.1",
     "all-contributors-cli": "^4.5.1",
     "chai": "^3.5.0",
     "husky": "^0.13.3",
     "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
-    "shelljs": "^0.7.7",
     "sinon": "^2.1.0",
     "tslint": "^5.1.0",
     "tslint-config-acamica": "^1.0.1",
