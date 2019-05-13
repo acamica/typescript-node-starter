@@ -1,6 +1,6 @@
 {
   "name": "typescript-node-starter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Bare bones project with all that you need to start a node app",
   "main": "dist/index.js",
   "author": "Hernan Rajchert <hrajchert@gmail.com>",
@@ -15,7 +15,6 @@
     "commitmsg": "validate-commit-msg",
     "precommit": "run-s lint:* build",
     "prepush": "run-s build-and:test",
-    "postinstall": "npm run -s build && tsns init",
     "lint:ts": "tslint --project tsconfig.json",
     "lint-and-fix:-ts": "tslint --project tsconfig.json --fix",
     "build-and:test": "run-s build test-once",
