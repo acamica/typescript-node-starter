@@ -1,6 +1,6 @@
+import { readFile } from 'fs';
 import * as os from 'os';
-import {readFile} from 'fs';
-import {add} from './foo/foo';
+import { add } from './foo/foo';
 
 readFile('./package.json', (err, packageStr) => {
     if (err) {
