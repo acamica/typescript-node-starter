@@ -13,7 +13,7 @@
     "docker:build": "docker build -t ${npm_package_name}:${npm_package_version} .",
     "docker:run": "docker run --rm ${npm_package_name}:${npm_package_version}",
     "commitmsg": "validate-commit-msg",
-    "precommit": "run-s lint:* \"build -- --no-unused-locals\"",
+    "precommit": "run-s lint:* build",
     "prepush": "run-s build-and:test",
     "postinstall": "npm run -s build && tsns init",
     "lint:ts": "tslint --project tsconfig.json",
@@ -28,13 +28,13 @@
   },
   "dependencies": {
     "tsns": "0.0.18",
-    "typescript": "3.0.1"
+    "typescript": "3.4.5"
   },
   "devDependencies": {
     "@types/chai": "4.1.4",
     "@types/mocha": "5.2.5",
     "@types/node": "10.5.7",
-    "all-contributors-cli": "5.4.0",
+    "all-contributors-cli": "^6.4.0",
     "chai": "4.1.2",
     "husky": "0.14.3",
     "mocha": "5.2.0",
