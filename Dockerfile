@@ -1,13 +1,13 @@
 FROM node:6.10.2-alpine
 
 # First copy the yarn.lock to install stuff and benefit from the layer cache
-COPY ["package.json", "yarn.lock", "/usr/src/"]
+COPY ["package.json", "package-lock.json", "/usr/src/"]
 
 # Run all the code from here
 WORKDIR /usr/src
 
 # Install dependencies
-RUN yarn install
+RUN npm install
 
 # Copy the code
 COPY [".", "/usr/src/"]

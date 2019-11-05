@@ -33,7 +33,7 @@ Features
 * ☁️ Homogeneous environment using [Docker](https://www.docker.com/) 🐳
 * 👮 TSlint before commit
 * 👮 Git [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/blob/v0.5.3/conventions/angular.md) messages validation
-* 🔐 Reliable package management using [yarn](https://yarnpkg.com/en/)
+* 🔐 Reliable package management using package.locks
 * 🎉 Visual Studio Code goodies
 * 📝 [Editor config](http://editorconfig.org/) for editors that supports it
 
@@ -93,7 +93,7 @@ $ sudo apt-get install libnotify-bin
 #### How to Remove:
 
 ```bash
-$ yarn remove -D mocha @types/mocha chai @types/chai sinon
+$ npm remove -D mocha @types/mocha chai @types/chai sinon
 ```
 
 In the `package.json` remove the scripts "test", "watch:test" and "tdd" and if no other script uses it, remove `npm-run-all` as a dependency.
@@ -119,7 +119,7 @@ $ npm run docker:run
 If you need to modify the way your image is built, runned or published, you can edit the `docker:*` scripts
 located in the package.json.
 
-Notice that the `Dockerfile` takes advantage of the `layers cache`, if you modify the code in the `src` folder it won't run `yarn install`, it will only build the typescript code. If you change the `package.json` or `yarn.lock` it will install deps and then build.
+Notice that the `Dockerfile` takes advantage of the `layers cache`, if you modify the code in the `src` folder it won't run `npm install`, it will only build the typescript code. If you change the `package.json` it will install deps and then build.
 
 ### 🎉 Visual Studio Code Goodies
 
